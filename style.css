@@ -1,0 +1,183 @@
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #fffdf4; /* мягкий фон */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Навбар */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffe97f; /* солнечный жёлтый */
+  padding: 15px 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.navbar:hover {
+  background: #e2ffdb; /* зелёный подсвет при ховере */
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #5b3b00;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #444;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background: #d2f8c2; /* светло-зелёный */
+  color: #2f5e1a;
+}
+
+/* Кнопка */
+.btn {
+  background: #f4c430; /* золотисто-жёлтый */
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #6bbf59; /* зелёный */
+  transform: translateY(-2px);
+}
+
+/* Сетка */
+.grid-layout {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "sidebar main sidebar-right"
+    "footer footer footer";
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.grid-header {
+  grid-area: header;
+  background: #fff8d1;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.grid-header:hover {
+  background: #dfffd4;
+}
+
+.grid-sidebar, .grid-sidebar-right {
+  background: #fffef2;
+  padding: 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.grid-sidebar:hover, .grid-sidebar-right:hover {
+  background: #edffd9;
+}
+
+.grid-main {
+  grid-area: main;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #f5f1d6;
+  transition: 0.3s;
+}
+
+.grid-main:hover {
+  background: #fafff4;
+  border-color: #b8f5a3;
+}
+
+.grid-footer {
+  grid-area: footer;
+  background: #f4c430;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.grid-footer:hover {
+  background: #6bbf59; /* зелёный */
+}
+/* Общий стиль для прямоугольных блоков */
+.block {
+  border-radius: 10px;
+  transition: 0.3s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.block:hover {
+  transform: translateY(-4px) scale(1.02);
+  background: #e8ffd6; /* зелёный фон */
+  box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+}
+
+
+/* Галерея */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fffdf2;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background: #e8ffd6;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.caption {
+  text-align: center;
+  padding: 5px;
+  background: #ffe97f;
+  color: #333;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.caption:hover {
+  background: #b5f7a3; /* зелёный */
+}
